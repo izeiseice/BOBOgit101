@@ -1,5 +1,5 @@
 function num(e) {
-    document.getElementById("bobo").innerHTML=" "+document.getElementById("bobo").innerHTML+e;
+    document.getElementById("bobo").innerHTML=document.getElementById("bobo").innerHTML+e+" ";
 }
 function bksp() {
     var y=document.getElementById("bobo").innerHTML;

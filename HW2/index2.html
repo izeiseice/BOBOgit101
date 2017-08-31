@@ -1,23 +1,89 @@
+<!DOCTYPE html>
 <html>
-<script src='index.js'></script>
-<script src='main.bundle.js'></script>
-<body onload="load();">
-<input id="tbInput" type="text" />
-<div id="VirtualKey">
-    <input id="btn1" type="button" onclick="input(this);" />
-    <input id="btn2" type="button" onclick="input(this);" />
-    <input id="btn3" type="button" onclick="input(this);" />
-    <br />
-    <input id="btn4" type="button" onclick="input(this);" />
-    <input id="btn5" type="button" onclick="input(this);" />
-    <input id="btn6" type="button" onclick="input(this);" />
-    <br />
-    <input id="btn7" type="button" onclick="input(this);" />
-    <input id="btn8" type="button" onclick="input(this);" />
-    <input id="btn9" type="button" onclick="input(this);" />
-    <br />
-    <input id="btn0" type="button" onclick="input(this)" />
-    <input id="btnDel" type="button" value="Backspace" onclick="del();" />
+<head>
+  <style>
+  
+p{
+	color: white;
+    font-family:Lucida Console;
+    font-size: 100%
+	border: 0px solid black;
+    margin: 0px 20px 0px 20px;
+	padding: 25px 40px; 
+    background: #DC7633;
+    width: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: table-cell;
+	font-weight: 10px;
+}
+p:hover {
+    background-color: #F9E79F;
+}
+p:active {
+    background-color: #F9E79F;
+} 
+</style>
+
+</head>
+<body>
+
+<div>
+	<h2>keyboard</h2>
 </div>
+<div id="mocha"> 
+
+</div>
+
+	<p onclick='word(this.innerHTML)'>1</p>
+	<p onclick='word(this.innerHTML)'>2</p>
+	<p onclick='word(this.innerHTML)'>3</p>
+	<p onclick='word(this.innerHTML)'>4</p>
+	<p onclick='word(this.innerHTML)'>5</p>
+	<p onclick='word(this.innerHTML)'>6</p>
+	<p onclick='word(this.innerHTML)'>7</p>
+	<p onclick='word(this.innerHTML)'>8</p>
+	<p onclick='word(this.innerHTML)'>9</p>
+	<p onclick='word(this.innerHTML)'>0</p>
+	<p onclick='words()'>Del</p>
+	</br>
+	<p onclick='word(this.innerHTML)'>q</p>
+	<p onclick='word(this.innerHTML)'>w</p>
+	<p onclick='word(this.innerHTML)'>e</p>
+	<p onclick='word(this.innerHTML)'>r</p>
+	<p onclick='word(this.innerHTML)'>t</p>
+	<p onclick='word(this.innerHTML)'>y</p>
+	<p onclick='word(this.innerHTML)'>i</p>
+	<p onclick='word(this.innerHTML)'>o</p>
+	<p onclick='word(this.innerHTML)'>p</p>
+	<p></p>
+	<p></p>
+	</br>
+	<p onclick='word(this.innerHTML)'>a</p>
+	<p onclick='word(this.innerHTML)'>s</p>
+	<p onclick='word(this.innerHTML)'>d</p>
+	<p onclick='word(this.innerHTML)'>f</p>
+	<p onclick='word(this.innerHTML)'>g</p>
+	<p onclick='word(this.innerHTML)'>h</p>
+	<p onclick='word(this.innerHTML)'>j</p>
+	<p onclick='word(this.innerHTML)'>k</p>
+	<p onclick='word(this.innerHTML)'>l</p>
+	<p></p>
+	<p></p>
+	</br>
+	<p onclick='word(this.innerHTML)'>z</p>
+	<p onclick='word(this.innerHTML)'>x</p>
+	<p onclick='word(this.innerHTML)'>c</p>
+	<p onclick='word(this.innerHTML)'>v</p>
+	<p onclick='word(this.innerHTML)'>b</p>
+	<p onclick='word(this.innerHTML)'>n</p>
+	<p onclick='word(this.innerHTML)'>m</p>
+	<p onclick='word(this.innerHTML)'>_</p>
+	<p onclick='bar()'>spacebar</p>
+	<p onclick='cle()'>clear</p>
+	
+<script src='js/index.js'></script>
+<script src='build/main.bundle.js'></script>
+
 </body>
 </html>

@@ -1,25 +1,16 @@
 "use strict";
 
-function input(e) {
-    var tbInput = document.getElementById("tbInput”);
-    	tbInput.value = tbInput.value + e.value;
+function word(hi) {
+	document.getElementById("mocha").innerHTML = document.getElementById("mocha").innerHTML + hi;
 }
- 
-function del() {
-    var tbInput = document.getElementById("tbInput");
-    tbInput.value = tbInput.value.substr(0, tbInput.value.length - 1);
+function words() {
+	var y = document.getElementById("mocha").innerHTML;
+	var x = document.getElementById("mocha").innerHTML.length;
+	document.getElementById("mocha").innerHTML = y.substring(0, x - 1);
 }
-function load() {
-    var array = new Array();
- 
-    while (array.length < 10) {
-        var temp = Math.round(Math.random() * 9);
-        if (!contain(array, temp)) {
-            array.push(temp);
-        }
-    }
-    for (i = 0; i < 10; i++) {
-        var btn = document.getElementById("btn" + i);
-        btn.value = array[i];
-    }
+function cle() {
+	document.getElementById("mocha").innerHTML = ' ';
+}
+function bar(hi) {
+	document.getElementById("mocha").innerHTML = document.getElementById("mocha").innerHTML + ' ';
 }

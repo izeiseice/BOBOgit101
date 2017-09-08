@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var getGithubProfile = exports.getGithubProfile = function getGithubProfile() {
-  return fetch('https://api.punkapi.com/v2/');
+  return fetch('https://api.punkapi.com/v2/beers');
 };
 
 },{}],2:[function(require,module,exports){

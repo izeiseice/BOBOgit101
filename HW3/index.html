@@ -1,1 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/index.js"></script>
 <script src='build/main.bundle.js'></script>
+</head>
+<body>
+<center>
+        <input type="text" id="beer_name" class="search-box" placeholder="Enter beer's name here." />
+        <br/><br/>
+            <button id="cmdSearch" class="btn info"   onclick="toSearch(document.getElementById('beer_name').value)">Search</button>
+
+</center>
+     <p id="table"></p>
+</body>
+</html>
